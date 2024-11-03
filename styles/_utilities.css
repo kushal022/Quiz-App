@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clrText: rgb(24, 139, 188);
+    --clrBdr: rgb(24, 139, 188);
+    --clrBgBtn: rgba(24, 139, 188, 0.203);
+    --shdow: 0px 0px 8px rgba(0, 0, 0, 0.309);
+}
+
+body {
+    font-family: sans-serif;
+}

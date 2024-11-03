@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="icon" type="image/x-icon" href="./image/icon.png">
+    <link rel="stylesheet" href="./styles/_utilities.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <!-- Home Section -->
+    <main id="home-page" class="main-home-page">
+        <!-- First section for details -->
+        <section class="detail-container">
+            <img src="./image/testbookLogo.png" alt="testbookLogo">
+            <h1>Hello <span id="userNameDisplay">user!</span> </h1>
+            <p class="p1"><b>Enter your name to continue the Quiz.</b></p>
+            <div class="input-box">
+                <input id="userNameInput" type="text" placeholder="Enter Your Name">
+                <button id="enterBtn">ENTER</button>
+            </div>
+            <p class="info">You'll have 10 seconds to answer each questions</p>
+        </section>
+        <hr>
+        <!-- Second section for Category -->
+        <section class="category-container">
+            <h1>Select Category</h1>
+            <div class="cat-btns-box">
+                <button id="cat1" value="pipeCisterns">Pipes And Cisterns</button>
+                <button id="cat2" value="probability">Probability</button>
+                <button id="cat3" value="problemOnAges">Problem On Ages</button>
+                <button id="cat4" value="profitAndLoss">Profit And Loss</button>
+            </div>
+        </section>
+    </main>
+    <!-- Quiz Section -->
+    <main id="quiz-page" class=" main-quiz-page hide">
+        <h3 id="categoryDisplay">Category</h3>
+        <div class="timer-score">
+            <div id="timer" class="timer">10</div>
+            <div class="score">SCORE : <span id="score">0</span></div>
+        </div>
+        <div class="question-box">
+            <div class="qus-no"><span id="qusNo">2</span> / 10</div>
+            <p id="question" class="question">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, at. Illo dolores laudantium quisquam
+                neque asperiores cupiditate. Accusantium excepturi facilis quae dicta mollitia labore est, quos
+                doloribus cupiditate! Aspernatur, repudiandae?
+            </p>
+        </div>
+        <div class="option-box">
+            <button class="optBtn" id="option1">option 1</button>
+            <button class="optBtn" id="option2">option 2</button>
+            <button class="optBtn" id="option3">option 3</button>
+            <button class="optBtn" id="option4">option 4</button>
+        </div>
+        <button id="skipBtn" class="skip-question-btn">Skip Question</button>
+        <button id="nxtBtn" class="next-question-btn">Next Question</button>
+    </main>
+    <!-- Result Section -->
+    <main id="result-page" class=" main-result-page hide">
+        <section class="result-container">
+
+            <h1>Quiz Result</h1>
+            <p><b><span id="userNameResult">User</span></b> your result is : </p>
+            <p>Total Time Taken : <span id="timeTaken"><b>110</b></span> seconds</p>
+            <p>Total Question : <span><b>10</b></span></p>
+            <p>Attempt : <span id="attemptQus"><b>10</b></span></p>
+            <p>Correct : <span id="correctQus"><b>9</b></span></p>
+            <p>Wrong : <span id="wrongQus"><b>1</b></span></p>
+            <p>Percentage : <span id="percentage"><b>90.00%</b></span></p>
+        </section>
+        <section class="btn-box">
+            <button id="startAgainBtn">Start Again</button>
+            <button id="goHomeBtn">Go To Home</button>
+        </section>
+
+    </main>
+    <!-- Script -->
+    <script type="module" src="./ques.js"></script>
+    <script type="module" src="./script.js"></script>
+    <!-- here module required for export and import data b/w js files -->
+</body>
+
+</html>
